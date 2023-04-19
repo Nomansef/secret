@@ -3,7 +3,16 @@
 
 <div class="jumbotron centered">
   <div class="container">
-    <i class="fas fa-key fa-6x"></i>
+    <div class="rotate-container">
+
+      <img class="fisrt" src="../photos/azmi1.1.png" alt="" class="rotate-img">
+        &nbsp
+        &nbsp
+      <i class="fas fa-key fa-6x"></i>
+      
+      <img src="../photos/azmi1.1.png" alt="" class="rotate-img" class="extra-js">
+    </div>
+    
     <h1 class="display-3">Secrets: ME'20(B)</h1>
     <p class="lead">Don't keep your secrets, share them anonymously!</p>
     <hr>
@@ -12,5 +21,16 @@
 
   </div>
 </div>
-
+<script>
+  const img2 =document.querySelector('.extra-js');
+let rtdeg2 =0;
+setInterval(() => {
+    rtdeg2++;
+  if(rtdeg2 == 360){
+      rtdeg2 =0;
+  }
+console.log(rtdeg2);
+  img2.style.transform = `rotate(${rtdeg2}deg)`;
+}, 10)
+</script>
 <%- include('partials/footer') %>

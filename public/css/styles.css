@@ -14,3 +14,18 @@ body {
   color: #fff;
   background-color: #000;
 }
+
+.rotate-img{
+  width: 100px;
+  height: 100px;
+}
+
+.rotate-container{
+  transform: rotate(180deg);
+}
+
+.rotate-container{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
